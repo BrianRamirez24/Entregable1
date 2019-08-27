@@ -1,107 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-          rel="stylesheet">
-    
-    <!--Import materialize.css-->
-    
-    <link type="text/css" 
-          rel="stylesheet" 
-          href="css/materialize/css/materialize.min.css"  
-          media="screen,projection"/>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    
-    <script src="js/index.js">
-    </script>
-    
-    <!--vinculo mi propia libreria de css-->
-    <link type ="text/css"
-          rel="stylesheet"
-          href="css/estilos.css"/>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Entregable1</title>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Import materialize.css-->
+
+      <link type="text/css" rel="stylesheet" href="css/materialize/css/materialize.min.css" media="screen,projection" />
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+      <script src="js/index.js">
+      </script>
+
+      <!--vinculo mi propia libreria de css-->
+      <link rel="icon" type="image/png" href="assets/icons/automobile.png" />
+
+      <link type="text/css" rel="stylesheet" href="css/estilos.css" />
 
 </head>
+
 <body>
-      <div class="container">
-            <div class="row">
-                  <div class="col s1 m1 l1 xl1"></div>
-                   <div class="col s10 m10 l10 xl10">
-                            
-                  <img class="rounded mx-auto d-block imagenes"  src="assets/images/thumb2-interior.jpg">
-                                          <div class="panel-botones1">
-                                              <button type="button" 
-                                                      class="btn-floating btn-large light-blue lighten-2 ">
-                                                                <i class="material-icons">arrow_back</i>
-                                              </button>
-                                        </div>
-                                        <div class="panel-botones2">
-                                                <button type="button" 
-                                                        class="btn-floating btn-large light-blue lighten-2">
-                                                                  <i class="material-icons">arrow_forward</i>
-                                                </button>
-                                          </div>
+      <div class = "container">
 
-                                          <div class="panel-botonesCl">
-                                                      <button type =  "button" 
-                                                              class = "btn-floating btn-large light-blue lighten2"
-                                                              value = "Cl">
-                                                              <label class="botones">cl</label>
-                                                      </button>
-                                                </div>
+            <div class = "row">
 
-                                                <div class="panel-botonesFr">
-                                                            <button type="button" 
-                                                                    class="btn-floating btn-large light-blue lighten2">
-                                                                    <label class="botones">Fr</label>
-                                                            </button>
-                                                      </div>
-                                                      <div class="panel-botonesAc">
-                                                                  <button type="button" 
-                                                                          class="btn-floating btn-large light-blue lighten2 "
-                                                                          >
-                                                                          <label class="botones">Ac</label>
-                                                                                    
-                                                                  </button>
-                                                            </div>
-                                                            <div class="panel-botonesEst">
-                                                                        <button type="button" 
-                                                        class="btn-floating btn-large red darken-4">
-                                                                  <i class="material-icons">change_history</i>
-                                                                  </div>
+                  <div class = "col s1 m1 l1 xl1">
+                  </div>
 
-                                                                  <div class="panel-botonesFrm">
-                                                                              <button type="button" 
-                                                              class="btn-floating btn-large red darken-4">
-                                                              <label class="botones">Frm</label>
-                                                                        </div>
-                                                                        <div class="panel-botonesEnc">
-                                                                                    <button type="button" 
-                                                                    class="btn-floating btn-large green accent-2">
-                                                                              <i class="material-icons">vpn_key</i>
-                                                                              </div>
+                  <div class = "col s10 m10 l10 xl10">
 
-                                      
-                                        <div id="consola" class ="dropdown-menu p-4 text-muted">
-                                              
-                                                   
-                                                    <p id = "parrafo" class="mb-0 row justify-content-center consola">
-                                                      bienvienido soy la consola del sistema
-                                                    </p>
-                                                 
-                                        </div>
-                   </div>
-                  <div class="col s1 m1 l1 xl1"></div>
+                        <img class = "rounded mx-auto d-block imagenes" 
+                             src   = "assets/images/thumb2-interior.jpg">
+
+                        <div class = "panel-botones1">
+
+                              <button type  = "button" 
+                                      class = "btn-floating btn-large light-blue lighten-2">
+
+                                    <i class = "material-icons">arrow_back</i>
+
+                              </button>
+                        </div>
+
+                        <div class = "panel-botones2">
+
+                              <button type  = "button" 
+                                      class = "btn-floating btn-large light-blue lighten-2">
+
+                                    <i class = "material-icons">arrow_forward</i>
+
+                              </button>
+                        </div>
+
+                        <div class = "panel-botonesCl">
+
+                              <button type="button" class="btn-floating btn-large deep-purple darken-2">
+
+                                    <label class="botones">cl</label>
+                              </button>
+                        </div>
+
+                        <div class="panel-botonesFr">
+
+                              <button type="button" class="btn-floating btn-large waves-effect red accent-4">
+
+                                    <label class="botones">Fr</label>
+
+                              </button>
+                        </div>
+
+                        <div class="panel-botonesAc">
+
+                              <button type="button" class="btn-floating btn-large green darken-3 ">
+
+                                    <label class="botones">Ac</label>
+
+                              </button>
+                        </div>
+
+                        <div class="panel-botonesEst">
+
+                              <button type="button" class="btn-floating btn-large red darken-4">
+
+                                    <i class="material-icons">change_history</i>
+                        </div>
+
+                        <div class="panel-botonesFrm">
+
+                              <button type="button" class="btn-floating btn-large red accent-4">
+
+                                    <label class="botones">Frm</label>
+                        </div>
+
+                        <div class="panel-botonesEnc">
+
+                              <button type="button" class="btn-floating btn-large teal accent-3">
+                                    <i class="material-icons">vpn_key</i>
+
+                        </div>
+
+
+                        <div class="panel-cambios1">
+
+                              <button type="button" class="btn-floating btn-large  red darken-4">
+
+                                    <label class="botones">R</label>
+
+                                    <button type="button" class="btn-floating btn-large orange lighten-2">
+
+                                          <label class="botones">1</label>
+
+                                          <button type="button" class="btn-floating btn-large orange lighten-2">
+
+                                                <label class="botones">3</label>
+
+                                                <button type="button" class="btn-floating btn-large orange lighten-2">
+
+                                                      <label class="botones">5</label>
+
+                        </div>
+
+                        <div class="panel-cambios2">
+
+                              <button type="button" class="btn-floating btn-large orange lighten-2">
+
+                                    <label class="botones">2</label>
+
+                                    <button type="button" class="btn-floating btn-large orange lighten-2">
+
+                                          <label class="botones">4</label>
+
+                                          <button type="button" class="btn-floating btn-large orange lighten-2">
+
+                                                <label class="botones">6</label>
+
+                        </div>
+
+                        <div id="consola" class = "dropdown-menu p-4 text-muted">
+                                    <p id="parrafo" class="mb-0 row justify-content-center consola">
+                                          bienvienido soy la consola del sistema
+                                    </p>
+                              </div>      
+                  </div>
+
+                  <div class = "col s1 m1 l1 xl1">
+                  </div>
+            
             </div>
+      
       </div>
-    
+
+
+      
+
 </body>
+
 </html>

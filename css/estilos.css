@@ -57,7 +57,7 @@ body{
 .panel-botonesFr{
     
     z-index: 2;
-    top:430px;
+    top:432px;
     bottom:485px;
     right:500px;
     left:580px;
@@ -100,7 +100,7 @@ body{
 .panel-botonesFrm{
     
     z-index: 2;
-    top:460px;
+    top:480px;
     bottom:185px;
     right:500px;
     left:780px;
@@ -113,17 +113,42 @@ body{
 .panel-botonesEnc{
     
     z-index: 2;
-    top:350px;
+    top:370px;
     bottom:185px;
     right:500px;
-    left:718px;
+    left:715px;
     width: fit-content;
     background-color:none;
     height:fit-content;
     position: absolute;
 }
 
-
+.panel-cambios1{
+    
+    z-index: 3;
+    top:300px;
+    bottom:185px;
+    right:500px;
+    left:845px;
+    border:2px dashed black;
+    width: fit-content;
+    background-color:none;
+    height:fit-content;
+    position: absolute;
+}
+.panel-cambios2{
+    
+    z-index: 3;
+    top:360px;
+    bottom:185px;
+    right:500px;
+    border:2px dashed black;
+    left:900px;
+    width: fit-content;
+    background-color:none;
+    height:fit-content;
+    position: absolute;
+}
 
 label{
     color:white;

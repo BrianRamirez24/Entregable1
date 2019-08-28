@@ -169,4 +169,141 @@ label{
     font-family:'consolas';
     box-shadow: 0px 0px 30px rgba(54, 52, 52, 0.9) inset;
 }
+@media screen and (maxwidth:1024px){
+    .panel-botones1{
+    
+        z-index: 2;
+        top:250px;
+        bottom:485px;
+        right:500px;
+        left:390px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        
+        
+        position: absolute;;
+    }
+    .panel-botones2{
+        
+        z-index: 2;
+        top:250px;
+        bottom:485px;
+        right:500px;
+        left:760px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;;
+    }
+    
+    .panel-botonesCl{
+        
+        z-index: 2;
+        top:440px;
+        bottom:auto;
+        right:250px;
+        left:475px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+    
+    .panel-botonesFr{
+        
+        z-index: 2;
+        top:432px;
+        bottom:485px;
+        right:500px;
+        left:580px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+    
+    .panel-botonesAc{
+    
+    
+        z-index: 2;
+        top:430px;
+        bottom:485px;
+        right:500px;
+        left:650px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    
+    }
+    
+    
+    
+    .panel-botonesEst{
+        
+        z-index: 2;
+        top:70px;
+        bottom:485px;
+        right:500px;
+        left:580px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+    
+    .panel-botonesFrm{
+        
+        z-index: 2;
+        top:480px;
+        bottom:185px;
+        right:500px;
+        left:780px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+    
+    .panel-botonesEnc{
+        
+        z-index: 2;
+        top:370px;
+        bottom:185px;
+        right:500px;
+        left:715px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+    
+    .panel-cambios1{
+        
+        z-index: 3;
+        top:300px;
+        bottom:185px;
+        right:500px;
+        left:845px;
+        border:2px dashed black;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+    .panel-cambios2{
+        
+        z-index: 3;
+        top:360px;
+        bottom:185px;
+        right:500px;
+        border:2px dashed black;
+        left:900px;
+        width: fit-content;
+        background-color:none;
+        height:fit-content;
+        position: absolute;
+    }
+}
 

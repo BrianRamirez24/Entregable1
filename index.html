@@ -39,6 +39,9 @@
 
                         <img class = "rounded mx-auto d-block imagenes" 
                              src   = "assets/images/thumb2-interior.jpg">
+                        <img class = "rounded mx-auto d-block imagenes" 
+                              hidden
+                             src   = "assets/images/Untitled.jpg">
 
                         <div class = "panel-botones1">
 
@@ -87,6 +90,16 @@
                               </button>
                         </div>
 
+                        <div class="panel-botonesDir">
+
+                              <button type="button" 
+                                          id = "directions"
+                                      class = "btn-floating btn-large lime lighten-1 "
+                                      onclick="ponerDire()">
+                                      <i class="material-icons">directions</i>
+                            </button>
+                        </div>
+
                         <div class="panel-botonesEst">
 
                               <button type="button" class="btn-floating btn-large red darken-4">
@@ -96,14 +109,15 @@
 
                         <div class="panel-botonesFrm">
 
-                              <button type="button" class="btn-floating btn-large red accent-4">
+                              <button type="button" onclick="activarFreno()"class="btn-floating btn-large red accent-4">
 
                                     <label class="botones">Frm</label>
                         </div>
 
                         <div class="panel-botonesEnc">
 
-                              <button type="button" class="btn-floating btn-large teal accent-3  pulse">
+                              <button type="button" id="btn-encendido"
+                                       onclick="prenderCarro()" class="btn-floating btn-large teal accent-3  pulse">
                                     <i class="material-icons">vpn_key</i>
 
                         </div>
@@ -144,10 +158,10 @@
                                                 <label class="botones">6</label>
 
                         </div>
-
-                        <div id="consola" class = "dropdown-menu p-4 text-muted">
+                                  
+                              <div id = "consola" class = "dropdown-menu p-4 text-muted">
                                     <p id="parrafo" class="mb-0 row justify-content-center consola">
-                                          bienvienido soy la consola del sistema
+                                          bienvenido, soy la consola del sistema
                                     </p>
                               </div>      
                   </div>

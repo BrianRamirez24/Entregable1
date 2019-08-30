@@ -21,7 +21,7 @@ class Carro{
         this.quinta = false;
         this.sexta  = false;
         this.arranque = false;
-        this.arranque = false;
+      
         this.directional = false;
     }
     //datos direccional
@@ -230,7 +230,7 @@ const paradas = (distancia, nparadas) => {
     
     let resultados = new Array();
 
-        switch(nparada) {
+        switch(nparadas) {
 
            
             case 1: puntoParada = Math.floor(Math.random() * 10);
@@ -436,10 +436,11 @@ function prenderCarro(){
 
                      switch(nparadas){
                          case 1:     
-                            
+                         document.getElementById("parrafo").innerHTML= ""
+                    
                         setTimeout(() => {
                             for(let i = 0; i<40; i++){
-                                document.getElementById("parrafo").innerHTML= `velocidad marcha 1 ${i}`
+                                document.getElementById("parrafo").innerHTML += `velocidad marcha 1 ${i} <br/>`
 
                             }
                         }, 3000);
@@ -448,7 +449,7 @@ function prenderCarro(){
                             carr.quitarPrimera();
                             carr.ponerSegunda();
                             for(let i = 40; i<80; i++){
-                                document.getElementById("parrafo").innerHTML = `velocidad marcha 2 ${i}`
+                                document.getElementById("parrafo").innerHTML += `velocidad marcha 2 ${i} <br/>`
                                 
                             }
                             }, 3000);
@@ -457,14 +458,14 @@ function prenderCarro(){
                             carr.quitarSegunda();
                             carr.ponerTercera();
                             for(let i = 80; i<120; i++){
-                                document.getElementById("parrafo").innerHTML = `velocidad marcha 3 ${i}`
+                                document.getElementById("parrafo").innerHTML += `velocidad marcha 3 ${i} <br/>`
                                 
                             }
                             }, 3000);
 
 
                         setTimeout(() => {
-                            document.getElementById("parrafo").innerHTML = `parada`
+                            document.getElementById("parrafo").innerHTML += `parada <br/>`
                             }, 3000);
 
 
@@ -472,7 +473,7 @@ function prenderCarro(){
                             carr.quitarTercera();
                             carr.ponerCuarta();
                             for(let i = 120; i<160; i++){
-                                document.getElementById("parrafo").innerHTML = `velocidad marcha 4 ${i}`
+                                document.getElementById("parrafo").innerHTML += `velocidad marcha 4 ${i} <br/>`
                                 
                             }
                             
@@ -482,7 +483,7 @@ function prenderCarro(){
                             carr.quitarCuarta();
                             carr.ponerQuinta();
                             for(let i = 160; i<200; i++){
-                                document.getElementById("parrafo").innerHTML = `velocidad marcha 5 ${i}`
+                                document.getElementById("parrafo").innerHTML += `velocidad marcha 5 ${i} <br/>`
                                 
                             }
                             
@@ -492,17 +493,19 @@ function prenderCarro(){
                             carr.quitarQuinta();
                             carr.ponerSexta();
                             for(let i = 200; i<=240; i++){
-                                document.getElementById("parrafo").innerHTML = `velocidad marcha 6 ${i}`
+                                document.getElementById("parrafo").innerHTML += `velocidad marcha 6 ${i} <br/>`
                                 
                             }
                             
                             }, 3000);
+
                            break;
                     case 2: 
-
+                    document.getElementById("parrafo").innerHTML =  ``
                     setTimeout(() => {
+                        
                         for(let i = 0; i<40; i++){
-                            document.getElementById("parrafo").innerHTML= `velocidad marcha 1 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 1 ${i} <br/>`
 
                         }
                     }, 3000);
@@ -511,12 +514,12 @@ function prenderCarro(){
                         carr.quitarPrimera();
                         carr.ponerSegunda();
                         for(let i = 40; i<80; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 2 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 2 ${i} <br/>`
                             
                         }
                         }, 3000);
                         setTimeout(() => {
-                            document.getElementById("parrafo").innerHTML = `parada`
+                            document.getElementById("parrafo").innerHTML += `parada <br/>`
                             }, 3000);
     
     
@@ -524,7 +527,7 @@ function prenderCarro(){
                         carr.quitarSegunda();
                         carr.ponerTercera();
                         for(let i = 80; i<120; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 3 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 3 ${i} <br/>`
                             
                         }
                         }, 3000);
@@ -535,14 +538,14 @@ function prenderCarro(){
                         carr.quitarTercera();
                         carr.ponerCuarta();
                         for(let i = 120; i<160; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 4 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 4 ${i} <br/>`
                             
                         }
                         
                         }, 3000);
 
                         setTimeout(() => {
-                            document.getElementById("parrafo").innerHTML = `parada`
+                            document.getElementById("parrafo").innerHTML += `parada <br/>`
                             }, 3000);
     
     
@@ -550,7 +553,7 @@ function prenderCarro(){
                         carr.quitarCuarta();
                         carr.ponerQuinta();
                         for(let i = 160; i<200; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 5 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 5 ${i} <br/>`
                             
                         }
                         
@@ -560,17 +563,18 @@ function prenderCarro(){
                         carr.quitarQuinta();
                         carr.ponerSexta();
                         for(let i = 200; i<=240; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 6 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 6 ${i} <br/>`
                             
                         }
                         
                         }, 3000);
                        break;
 
-                            case 3: 
+                            case 3:
+                            document.getElementById("parrafo").innerHTML =  ``    
                             setTimeout(() => {
                                 for(let i = 0; i<40; i++){
-                                    document.getElementById("parrafo").innerHTML= `velocidad marcha 1 ${i}`
+                                    document.getElementById("parrafo").innerHTML += `velocidad marcha 1 ${i} <br/>`
         
                                 }
                             }, 3000);
@@ -579,12 +583,13 @@ function prenderCarro(){
                                 carr.quitarPrimera();
                                 carr.ponerSegunda();
                                 for(let i = 40; i<80; i++){
-                                    document.getElementById("parrafo").innerHTML = `velocidad marcha 2 ${i}`
+                                    document.getElementById("parrafo").innerHTML += `velocidad marcha 2 ${i} <br/>`
                                     
                                 }
                                 }, 3000);
                                 setTimeout(() => {
-                                    document.getElementById("parrafo").innerHTML = `parada`
+                                    document.getElementById("parrafo").innerHTML += `parada<br/>`
+                                    document.getElementById("imageStop").style.visibility="visible";
                                     }, 3000);
             
             
@@ -592,7 +597,7 @@ function prenderCarro(){
                                 carr.quitarSegunda();
                                 carr.ponerTercera();
                                 for(let i = 80; i<120; i++){
-                                    document.getElementById("parrafo").innerHTML = `velocidad marcha 3 ${i}`
+                                    document.getElementById("parrafo").innerHTML += `velocidad marcha 3 ${i} <br/>`
                                     
                                 }
                                 }, 3000);
@@ -603,14 +608,14 @@ function prenderCarro(){
                                 carr.quitarTercera();
                                 carr.ponerCuarta();
                                 for(let i = 120; i<160; i++){
-                                    document.getElementById("parrafo").innerHTML = `velocidad marcha 4 ${i}`
+                                    document.getElementById("parrafo").innerHTML += `velocidad marcha 4 ${i} <br/>`
                                     
                                 }
                                 
                                 }, 3000);
         
                                 setTimeout(() => {
-                                    document.getElementById("parrafo").innerHTML = `parada`
+                                    document.getElementById("parrafo").innerHTML += `parada <br/>`
                                     }, 3000);
             
             
@@ -618,14 +623,14 @@ function prenderCarro(){
                                 carr.quitarCuarta();
                                 carr.ponerQuinta();
                                 for(let i = 160; i<200; i++){
-                                    document.getElementById("parrafo").innerHTML = `velocidad marcha 5 ${i}`
+                                    document.getElementById("parrafo").innerHTML += `velocidad marcha 5 ${i} <br/>`
                                     
                                 }
                                 
                                 }, 3000); 
                                                     setTimeout(() => {
                         for(let i = 0; i<40; i++){
-                            document.getElementById("parrafo").innerHTML= `velocidad marcha 1 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 1 ${i} <br/>`
 
                         }
                     }, 3000);
@@ -634,12 +639,13 @@ function prenderCarro(){
                         carr.quitarPrimera();
                         carr.ponerSegunda();
                         for(let i = 40; i<80; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 2 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 2 ${i}<br/>`
                             
                         }
                         }, 3000);
                         setTimeout(() => {
-                            document.getElementById("parrafo").innerHTML = `parada`
+                            document.getElementById("imageStop").style.visibility="visible";
+                            document.getElementById("parrafo").innerHTML += `parada<br/>`
                             }, 3000);
     
     
@@ -647,7 +653,7 @@ function prenderCarro(){
                         carr.quitarSegunda();
                         carr.ponerTercera();
                         for(let i = 80; i<120; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 3 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 3 ${i}<br/>`
                             
                         }
                         }, 3000);
@@ -658,22 +664,24 @@ function prenderCarro(){
                         carr.quitarTercera();
                         carr.ponerCuarta();
                         for(let i = 120; i<160; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 4 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 4 ${i}<br/>`
                             
                         }
                         
                         }, 3000);
 
                         setTimeout(() => {
-                            document.getElementById("parrafo").innerHTML = `parada`
+                            document.getElementById("parrafo").innerHTML += `parada<br/>`
+                            ddocument.getElementById("imageStop").style.visibility="visible";
                             }, 3000);
     
     
                     setTimeout(() => {
                         carr.quitarCuarta();
                         carr.ponerQuinta();
+
                         for(let i = 160; i<200; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 5 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 5 ${i}<br/>`
                             
                         }
                         
@@ -685,7 +693,7 @@ function prenderCarro(){
                         carr.quitarQuinta();
                         carr.ponerSexta();
                         for(let i = 200; i<=240; i++){
-                            document.getElementById("parrafo").innerHTML = `velocidad marcha 6 ${i}`
+                            document.getElementById("parrafo").innerHTML += `velocidad marcha 6 ${i}<br/>`
                             
                         }
                         
@@ -693,16 +701,7 @@ function prenderCarro(){
                        break;
 
         
-                            setTimeout(() => {
-                                carr.quitarQuinta();
-                                carr.ponerSexta();
-                                for(let i = 200; i<=240; i++){
-                                    document.getElementById("parrafo").innerHTML = `velocidad marcha 6 ${i}`
-                                    
-                                }
-                                
-                                }, 3000);
-                               break;
+                            
                              }
     
                        
